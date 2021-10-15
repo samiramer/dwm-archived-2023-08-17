@@ -17,13 +17,13 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "SauceCodePro Nerd Font Mono:size=10" };
 static const char dmenufont[]       = "SauceCodePro Nerd Font Mono:size=10";
 
-static const char col_norm_fg[]	    = "#F8F8F2";
-static const char col_norm_bg[]	    = "#282A36";
-static const char col_norm_border[] = "#282A36";
+static const char col_norm_fg[]	    = "#FBF1C7";
+static const char col_norm_bg[]	    = "#282828";
+static const char col_norm_border[] = "#282828";
 
-static const char col_sel_fg[]	    = "#F8F8F2";
-static const char col_sel_bg[]	    = "#44475A";
-static const char col_sel_border[]  = "#BD93F9";
+static const char col_sel_fg[]	    = "#FBF1C7";
+static const char col_sel_bg[]	    = "#3C3836";
+static const char col_sel_border[]  = "#FE8019";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
