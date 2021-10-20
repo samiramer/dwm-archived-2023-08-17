@@ -18,8 +18,8 @@ static const char *fonts[]          = { "SauceCodePro Nerd Font Mono:size=10" };
 static const char dmenufont[]       = "SauceCodePro Nerd Font Mono:size=10";
 
 static const char col_norm_fg[]	    = "#FBF1C7";
-static const char col_norm_bg[]	    = "#282828";
-static const char col_norm_border[] = "#282828";
+static const char col_norm_bg[]	    = "#1d2021";
+static const char col_norm_border[] = "#1d2021";
 
 static const char col_sel_fg[]	    = "#FBF1C7";
 static const char col_sel_bg[]	    = "#3C3836";
