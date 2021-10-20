@@ -41,8 +41,8 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",               NULL,       NULL,       0,            1,           -1 },
-	{ "Brave-browser",      NULL,       NULL,       1 << 1,       0,           -1 },
-	{ "Google-chrome",      NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "Brave-browser",      NULL,       "Chat",       1 << 2,       0,           -1 },
+	{ "Google-chrome",      NULL,       "Chat",       1 << 2,       0,           -1 },
 	{ NULL,      NULL,       "Task Manager - Brave",       0,       1,           -1 },
 	{ NULL,      NULL,       "Task Manager - Google Chrome",       0,       1,           -1 },
 	{ "Steam",        NULL,       NULL,       1 << 7,            1,           -1 },
