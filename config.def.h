@@ -17,13 +17,13 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "SauceCodePro Nerd Font Mono:size=10" };
 static const char dmenufont[]       = "SauceCodePro Nerd Font Mono:size=10";
 
-static const char col_norm_fg[]	    = "#dcdfe4";
-static const char col_norm_bg[]	    = "#282c34";
-static const char col_norm_border[] = "#282c34";
+static const char col_norm_fg[]	    = "#fbf1c7";
+static const char col_norm_bg[]	    = "#282828";
+static const char col_norm_border[] = "#282828";
 
-static const char col_sel_fg[]	    = "#dcdfe4";
-static const char col_sel_bg[]	    = "#424855";
-static const char col_sel_border[]  = "#98c379";
+static const char col_sel_fg[]	    = "#fbf1c7";
+static const char col_sel_bg[]	    = "#3c3836";
+static const char col_sel_border[]  = "#d79921";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -84,7 +84,7 @@ static const char *browsercmd[]  = { "launch_browser", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *rangercmd[] = { "kitty", "-e", "ranger", NULL };
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "kitty", "-t", scratchpadname, NULL };
+static const char *scratchpadcmd[] = { "kitty", "--title", scratchpadname, NULL };
 static const char *printguicmd[] = { "flameshot", "gui", NULL };
 static const char *lightup[] = {"brightness_change", "10%+", NULL};
 static const char *lightdown[] = {"brightness_change", "10%-", NULL};
