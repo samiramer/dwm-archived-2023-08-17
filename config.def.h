@@ -80,8 +80,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *rangercmd[] = { "kitty", "-e", "ranger", NULL };
 static const char *browsercmd[] = { "launch_browser", NULL };
-static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "kitty", "--title", scratchpadname, NULL };
+static const char scratchpadname[] = "Scratchpad";
+static const char *scratchpadcmd[] = { "kitty", "--title", scratchpadname, "--override", "initial_window_height=100", "--override", "initial_window_width=34", NULL };
 static const char *printguicmd[] = { "flameshot", "gui", NULL };
 static const char *lightup[] = {"brightness_change", "10%+", NULL};
 static const char *lightdown[] = {"brightness_change", "10%-", NULL};
@@ -112,6 +112,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_b,                       togglebar,      {0} },	
   { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = scratchpadcmd } },
 	{ MODKEY|ShiftMask,             XK_j,      pushdown,       {0} },
 	{ MODKEY|ShiftMask,             XK_k,      pushup,         {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
