@@ -11,7 +11,7 @@ static const char *fonts[]          = { "SauceCodePro Nerd Font:size=11" };
 static const char dmenufont[]       = "SauceCodePro Nerd Font:size=11";
 static const char col_norm_fg[]	    = "#fbf1c7";
 static const char col_norm_bg[]	    = "#282828";
-static const char col_norm_border[] = "#fbf1c7";
+static const char col_norm_border[] = "#504945";
 
 static const char col_sel_fg[]	    = "#fbf1c7";
 static const char col_sel_bg[]	    = "#3c3836";
