@@ -65,6 +65,7 @@ static const Layout layouts[] = {
 
 /* key definitions */
 #define MODKEY Mod4Mask
+#define ALTKEY Mod1Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -92,6 +93,8 @@ static const char *lockcmd[] = { "loginctl", "lock-session", NULL };
 static const char *powercmd[] = { "dmenu_power", NULL };
 static const char *vpncmd[] = { "dmenu_vpn", NULL };
 static const char *monitorcmd[] = { "dmenu_monitor", NULL };
+static const char *dunstclosecmd[] = { "dunstctl", "close", NULL };
+static const char *dunstcloseallcmd[] = { "dunstctl", "close-all", NULL };
 
 #include <X11/XF86keysym.h>
 
@@ -115,6 +118,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = scratchpadcmd } },
 	{ MODKEY|ShiftMask,             XK_j,      pushdown,       {0} },
 	{ MODKEY|ShiftMask,             XK_k,      pushup,         {0} },
+	{ ALTKEY,                       XK_space,  spawn,          {.v = dunstclosecmd } },
+	{ ALTKEY|ShiftMask,             XK_space,  spawn,          {.v = dunstcloseallcmd } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
