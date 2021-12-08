@@ -14,13 +14,13 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int user_bh            = 26;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
 static const char *fonts[]          = { "SauceCodePro Nerd Font:size=11" };
 static const char dmenufont[]       = "SauceCodePro Nerd Font:size=11";
-static const char col_norm_fg[]	    = "#fbf1c7";
-static const char col_norm_bg[]	    = "#282828";
-static const char col_norm_border[] = "#504945";
+static const char col_norm_fg[]	    = "#abb2bf";
+static const char col_norm_bg[]	    = "#21252b";
+static const char col_norm_border[] = "#5c6370";
 
-static const char col_sel_fg[]	    = "#fbf1c7";
-static const char col_sel_bg[]	    = "#3c3836";
-static const char col_sel_border[]  = "#d79921";
+static const char col_sel_fg[]	    = "#abb2bf";
+static const char col_sel_bg[]	    = "#282c34";
+static const char col_sel_border[]  = "#e86671";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
